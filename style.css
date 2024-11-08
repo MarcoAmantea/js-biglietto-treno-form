@@ -8,11 +8,6 @@ body{
    background-image: url(./img/trenitalia_hero_2x.jpg);
    background-size: cover;
 }
-.container{
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
 img{
     max-width: 100%;
 }
