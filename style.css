@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   background-image: url(./img/trenitalia_hero_2x.jpg);
+   background-size: cover;
+}
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+.center{
+    text-align: center;
+}

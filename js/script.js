@@ -7,10 +7,11 @@ const offerElem = document.getElementById("offer")
 const trainElem = document.getElementById("train")
 const codeElem = document.getElementById("code")
 const priceElem = document.getElementById("price")
+const resultElem = document.getElementById("result")
+const titleElem = document.getElementById("title-result")
 
 
 formElem.addEventListener("submit",function(event){
-console.log(event);
 event.preventDefault();
 const name = nameElem.value.trim();
 const chilometri = chilometriElem.value.trim();
@@ -44,7 +45,12 @@ if(età < 18) {
 }else{
     priceElem.innerHTML = `${ticketPrice.toFixed(2)} €`
 }
-
+if(resultElem.classList.contains("d-none")){
+    resultElem.classList.remove("d-none")
+}
+if(titleElem.classList.contains("d-none")){
+    titleElem.classList.remove("d-none")
+}
 codeElem.innerHTML = Math.floor(Math.random () * 10000) +1;
 trainElem.innerHTML = Math.floor(Math.random () * 10) +1;
 offerElem.innerHTML = "Standard"
